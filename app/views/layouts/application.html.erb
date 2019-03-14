@@ -1,3 +1,9 @@
+<style>
+body {
+	background: #eee !important;	
+}
+</style>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,23 +11,46 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
-    <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 
 
-  <body>
-    <% if current_user %>
+  <body>  
+  
+  <nav class="navbar navbar-expand navbar-transparent bg-transparent">
+  <a class="navbar-brand" href="<%= root_url %>"><%= image_tag("Weebuylogo1.png", size: "48", class: "img-circle") %></a>
+  
+    
+    
+    <div class="collapse navbar-collapse" >
+
+        <ul class="navbar-nav ml-auto">
+        <% if current_user %>
      <%= link_to "logout", destroy_user_session_path, method: :delete %>
      <%= link_to "Edit", edit_user_registration_path(@user) %>
      <% else %>
       <%= link_to "Register",new_user_registration_path %>
       
        <%= link_to "Login", new_user_session_path %>
-
+       
      <% end %>
+     </ul>
+     </div>
+
+     </nav>
     <%= yield %>
+    
+    
   </body>
 </html>
