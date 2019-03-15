@@ -1,0 +1,81 @@
+resources :seller_registrations, only: [:index] do
+  get 'index', on: :collection
+    post 'save_seller_data', on: :collection
+  end
+ <select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+
+ $.ajax({
+        type:"post"
+        url: '/seller_registrations/save_seller_data',
+        data:JSON.stringify(data),
+        success: function (msg) {
+       			alert(msg);
+        },
+    });
+ get 'index', to: 'seller_registrations#index'
+  post 'save_seller_data', to: 'seller_registrations#save_seller_data'
+  Image:<br>
+  <input type="file" name="image1" value="image1" id="image1">
+  <label for="image1"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100" style="width: 75px;"></br><br>
+   Gst Image:<br>
+  <input type="file" name="image2" value="image2" id="image2">
+  <label for="image2"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100"></br><br>
+  Owner PAN Image:<br>
+  <input type="file" name="fileupload1" value="fileupload1" id="fileupload1">
+  <label for="fileupload1"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100"></br><br>
+   SHOP PAN IMAGE:<br>
+  <input type="file" name="fileupload2" value="fileupload2" id="fileupload2">
+  <label for="fileupload2"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100"></br><br>
+   OWNER AADHAR IMAGE:<br>
+  <input type="file" name="fileupload3" value="fileupload3" id="fileupload3">
+  <label for="fileupload3"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100"></br><br>
+  TRADE LISCENSE IMAGE:<br>
+  <input type="file" name="fileupload4" value="fileupload4" id="fileupload4">
+  <label for="fileupload4"> Select a file to upload</label>
+  <input type="image" src="" alt=""  width="100"></br><br>
+  ISO IMAGE:<br>
+  <input type="file" name="fileupload6" value="fileupload6" id="fileupload6">
+  <label for="fileupload6"> Select a file to upload</label>
+  <input type="image" src="" alt="" width="100"></br><br>
+
+
+
+
+
+
+
+   
+   <form accept-charset="UTF-8" >
+
+
+    function phone_no_validation(){
+      var flag = true;
+      var phone_no = document.getElementById("phone1").value.trim();
+      var regExp = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
+     
+  if (!phone_no.match(regExp)) {
+    alert("Please enter a valid phone number");
+    return flag = false;
+    }
+
+  }
+
+  
+  function email_validation(){
+    var flag = true;
+    var company_email = document.getElementById("email").value.trim();
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     if(!re.test(String(company_email).toLowerCase())){
+       alert("Please enter a valid email")
+       return flag = false;
+     }
