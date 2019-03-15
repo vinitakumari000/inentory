@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ownername: MyString
+  shopname: MyString
+  phonenumber1: MyString
+  phonenumber2: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  pincode: MyString
+  state: MyString
+  image: MyString
+  workinghourfrom: MyString
+  workinghourto: MyString
+  website_url: MyString
+  company_email: MyString
+  intro: MyString
+  gst_no: MyString
+  gst_certificate: MyString
+  shop_pan_number: MyText
+  shop_pan: MyString
+  owner_pan_number: MyText
+  owner_pan: MyString
+  owner_aadhar_number: MyText
+  owner_aadhar_image: MyString
+  trade_license_number: MyText
+  trade_license_certificate: MyString
+  municipality_corp_certificate_number: MyText
+  municipality_corp_certicate_image: MyString
+  iso_number: MyText
+  iso_certificate: MyString
+
+two:
+  ownername: MyString
+  shopname: MyString
+  phonenumber1: MyString
+  phonenumber2: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  pincode: MyString
+  state: MyString
+  image: MyString
+  workinghourfrom: MyString
+  workinghourto: MyString
+  website_url: MyString
+  company_email: MyString
+  intro: MyString
+  gst_no: MyString
+  gst_certificate: MyString
+  shop_pan_number: MyText
+  shop_pan: MyString
+  owner_pan_number: MyText
+  owner_pan: MyString
+  owner_aadhar_number: MyText
+  owner_aadhar_image: MyString
+  trade_license_number: MyText
+  trade_license_certificate: MyString
+  municipality_corp_certificate_number: MyText
+  municipality_corp_certicate_image: MyString
+  iso_number: MyText
+  iso_certificate: MyString
