@@ -1,14 +1,12 @@
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 
 <style>
 
+
+
+
+
 input[type=text], select, textarea {
-    width: 100%;
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -16,138 +14,232 @@ input[type=text], select, textarea {
     height: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
+    
+    
+  }
+  
+  .button_submit{
+   color: #ffffff;
+   background-color: rgb(0, 140, 255);
+   border: none;
+   margin-top: 20px;
+   width: 10%;
+   height: 30px;
+   border-radius: 25px;
+   margin-left: 45%;
+   margin-bottom: 30px; 
+   margin-top: 30px;
+     
   }
 
-  
+  .detail_1{
+        padding-left: 50px;
+        padding-bottom: 10px;
+        text-size: 10px;
+        padding-top: 10px;
+}
+
+.line1{
+   margin-top: 0px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.line2{
+   
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.line3{
+   
+   margin-left: 180px;
+   margin-right: 180px;
+}
+
+.label_1{
+    padding-left: 55px;
+}
+
+.label_2{
+    padding-left: 140px;
+}
+
+.label_3{
+    padding-left: 300px;
+}
+
+.up_load{
+   float: right;
+}
+
+.required span {
+            color: red;
+        }
+
 </style>
 
- <h3>Contact Person</h3>
-           <div class="container">
-            <div class="row">
-             <div class="col-sm">
+<hr class="line1">
+
+ <h5 class="detail_1"><b>Contact Person Details</b></h5>
+           
+     <div class="container">
+      <div class="row">
+             <div class="col-sm col-form-label col-form-label-sm">
              <div class="pt-1">
-             First and Middle Name: 
+             First and Middle Name: <label class="required"></label><br>
              <input class="fill_filed" type="text" name="name1" id='name1'><br>
-             Last Name:
+             Last Name:<label class="required"></label><br>
              <input class="fill_filed" type="text" name="name2" id='name2'><br>
-             Designation:
+             Designation:<label class="required"></label><br>
              <input type="text" name="designation" id='designation'><br>
-             Phone Number:
+             Phone Number:<label class="required"></label><br>
              <input type="text" name="phone1" id='phone1'><br>
-             Alternative Phone Number:
-             <input type="text" name="phone2" id='phone2'><br>
+             
              </div>
              </div>
-             <div class="col-sm">
+             
+             
+             <div class="col-sm col-form-label col-form-label-sm">
              <div class="pt-2">
-             Email:
-             <input class="fill1" type="text" name="email" id='email'><br>
-             PAN Number: 
-             <input class="fill1" type="text" name="shop_pan_number" id='shop_pan_number'><br>
+             Alternative Phone Number:<br>
+             <input type="text" name="phone2" id='phone2'><br>
+             Email:<label class="required"></label><br>
+             <input class="fill1" type="text" name="email" id='email'><br>             
+             PAN Number: <label class="required"></label><br>
+             <input class="fill1" type="text" name="shop_pan_number" id='shop_pan_number'>          
              Image: 
-             <input type="file" name="fileupload4" value="fileupload4" id="fileupload4"><label for="fileupload4"> Select a file to upload</label> <br>
-             Aadhar Number:
-             <input class="fill1" type="text" name="owner_aadhar_no" id='pwner_aadhar_no'><br>
+             <input class="fill1" type="file" name="fileupload4" value="fileupload4" id="fileupload4"><br>            
+             Aadhar Number: <br>
+             <input class="fill1" type="text" name="owner_aadhar_no" id='pwner_aadhar_no'>           
              Image: 
-             <input type="file" name="fileupload5" value="fileupload5" id="fileupload5"><label for="fileupload5"> Select a file to upload</label> <br>
+             <input class="fill1" type="file" name="fileupload5" value="fileupload5" id="fileupload5"><br>
              </div>
              </div>
          </div> 
          </div> 
       
              
-         
+<hr class="line2">    
        
- <h3 class "h2">Company Details</h3>
+ <h5 class="detail_1"><b>Company Details</b></h5>
 
          <div class="container">
             <div class="row">
              
-            <div class="col-sm">
-             Shop Name:
-             <input type="text" name="shopname" id='shop'><br>
+            <div class="col-sm col-form-label col-form-label-sm">
+             Shop Name:<br>
+             <input type="text" name="shopname" id='shop'>
              Image:
-             <input type="file" name="fileupload1" value="fileupload1" id="fileupload1"><br> <label for="fileupload1"> Select a file to upload</label> <br>
-             Phone Number:
+             <input type="file" name="fileupload1" value="fileupload1" id="fileupload1"> <br>
+             Phone Number:<br>
              <input type="text" name="phone3" id='phone3'><br>
-             Email:
+             Email:<br>
              <input type="text" name="email" id='email'><br>
-             Addrress:
+             Addrress:<br>
              <input type="text" name="adress" id='adress'><br>
-             Alternative address:
+             Alternative address:<br>
              <input type="text" name="adress2" id='adress2'><br>
-             City:
+             City:<br>
              <input type="text" name="city" id='city'><br>
-             Pincode:
-             <input type="text" name="pin" id='pin'><br>
-             State:
-             <input type="text" name="state" id='state'><br>
              </div>
              
-             <div class="col-sm">
+             <div class="col-sm col-form-label col-form-label-sm">
              
-             
-             Company Email:
+             Pincode:<br>
+             <input type="text" name="pin" id='pin'><br>
+             State:<br>
+             <input type="text" name="state" id='state'><br>
+             Company Email:<br>
              <input type="text" name="email" id='email'><br>
-             GST Number:
-             <input type="text" name="gst_no" id='gst_no'><br>
+             GST Number:<br>
+             <input type="text" name="gst_no" id='gst_no'>
              Image:
-             <input type="file" name="fileupload2" value="fileupload2" id="fileupload2"><br><label for="fileupload2"> Select a file to upload</label> <br> 
-             Shop PAN Number:
-             <input type="text" name="shop-pan_number" id='shop_pan_number'><br>
+             <input type="file" name="fileupload2" value="fileupload2" id="fileupload2"> <br> 
+             Shop PAN Number:<br>
+             <input type="text" name="shop-pan_number" id='shop_pan_number'>
              Image:
-             <input type="file" name="fileupload3" value="fileupload3" id="fileupload3"><br><label for="fileupload3"> Select a file to upload</label> <br>
-             Certificate of Incorporation:
-             Image:
-             <input type="file" name="fileupload2" value="fileupload2" id="fileupload2"><br><label for="fileupload2"> Select a file to upload</label> <br> 
+             <input type="file" name="fileupload3" value="fileupload3" id="fileupload3"> <br>
+             
              </div>
 
-             <div class="col-sm">
-                         
-             Trade License Certificate:
-             <input type="file" name="fileupload6" value="fileupload6" id="fileupload6"><br><label for="fileupload6"> Select a file to upload</label> <br>
-             ISO certificate:
-             <input type="file" name="fileupload8" value="fileupload8" id="fileupload8"><br><label for="fileupload8"> Select a file to upload</label> <br>
-             Rental Agreement:
-             <input type="file" name="fileupload8" value="fileupload8" id="fileupload8"><br><label for="fileupload8"> Select a file to upload</label> <br>
-             Electric Bill:
-             <input type="file" name="fileupload8" value="fileupload8" id="fileupload8"><br><label for="fileupload8"> Select a file to upload</label> <br>
-             Telephone Bill:
-             <input type="file" name="fileupload8" value="fileupload8" id="fileupload8"><br><label for="fileupload8"> Select a file to upload</label> <br>
-             </div>
+             
 
           </div> 
          </div> 
            
- <h3 class="hs">Bank Details</h3>
+<hr class="line3">
+<h5 class="detail_1"><b>Document Required</b></h5>
+   <div class="container">
+      <div class="row">
+         <div class="col-sm col-form-label col-form-label-sm">
+         
+         Certificate of Incorporation:    
+         <input class="up_load" type="file" name="fileupload2" value="fileupload2" id="fileupload2"><label class="label_3" for="fileupload2"> </label> <br>                 
+         Trade License Certificate:
+         <input class="up_load" type="file" name="fileupload6" value="fileupload6" id="fileupload6"><label class="label_3" for="fileupload6"> </label> <br>
+         ISO certificate:
+         <input class="up_load" type="file" name="fileupload8" value="fileupload8" id="fileupload8"><label class="label_3" for="fileupload8"> </label> <br>
+         </div>
+         <div class="col-sm col-form-label col-form-label-sm">
+         Rental Agreement:
+         <input class="up_load" type="file" name="fileupload8" value="fileupload8" id="fileupload8"><label class="label_3" for="fileupload8"> </label> <br>
+         Electric Bill:
+         <input class="up_load" type="file" name="fileupload8" value="fileupload8" id="fileupload8"><label class="label_3" for="fileupload8"> </label> <br>
+         Telephone Bill:
+         <input class="up_load" type="file" name="fileupload8" value="fileupload8" id="fileupload8"><label class="label_3" for="fileupload8"> </label> <br>
+         </div>
+    </div>
+   </div>
+        
+        
+        
+        
+        
+        
+      
+<hr class="line2">
+
+ <h5 class="detail_1"><b> Bank Details </b></h5>
       <div class="container">
          <div class="row">
-             <div class="col-sm">
-             Bank name:
+             <div class="col-sm col-form-label col-form-label-sm">
+             Bank name:<br>
              <input type="text" name="bankname" id='bank'><br>
-             Account holder name:
+             Account holder name:<br>
              <input type="text" name="holdername" id='holder'><br>
-             Account number:
+             Account number:<br>
              <input type="text" name="account1" id='account1'><br>
-             Confirm Account number:
+             Confirm Account number:<br>
              <input type="text" name="account2" id='account2'><br>
              </div>
-             <div class="col-sm">
-             IFSC code:
+             <div class="col-sm col-form-label col-form-label-sm">
+             IFSC code:<br>
              <input type="text" name="code" id='code'><br>
-             Branch:
+             Branch:<br>
              <input type="text" name="branch" id='branch'><br>
-             Account type:
+             Account type:<br>
              <input type="text" name="accounttype" id='type'><br>
              Canceled cheque:
-             <input type="file" name="fileupload4" value="fileupload4" id="fileupload4"><br><label for="fileupload4"> Select a file to upload</label>           
+             <input class="up_load" type="file" name="fileupload4" value="fileupload4" id="fileupload4"><label class="label_2" for="fileupload4"> </label>           
              </div>
           </div>
        </div> 
  
+       <script type="text/javascript">
+       //<![CDATA[
+       $(function(){
  
+             $('.required').each(function(){
+                 $(this).html('<span>*</span>' + $(this).text());
+             });
+ 
+         });
+       //]]>;
+       </script>
 
 
 
-<button type="submit" form="form1" value="Submit">Submit</button>
+<button class="button_submit" type="submit" form="form1" value="Submit">Submit</button>
+
 

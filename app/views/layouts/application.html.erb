@@ -1,8 +1,4 @@
-<style>
-body {
-	background: #eee !important;	
-}
-</style>
+
 
 <!DOCTYPE html>
 <html>
@@ -27,9 +23,18 @@ body {
 
 
   <body>  
+
+
+  <style>
+    body {
+        background: #eee !important;	
+}
+
+   
+</style>
   
   <nav class="navbar navbar-expand navbar-transparent bg-transparent">
-  <a class="navbar-brand" href="<%= root_url %>"><%= image_tag("Weebuylogo1.png", size: "48", class: "img-circle") %></a>
+  <a class="navbar-brand" href="<%= root_url %>"><%= image_tag("Weebuylogo1.png", size: "48", class: "img") %></a>
   
     
     
@@ -41,14 +46,13 @@ body {
      <%= link_to "Edit", edit_user_registration_path(@user) %>
      <% else %>
       <%= link_to "Register",new_user_registration_path %>
-      
-       <%= link_to "Login", new_user_session_path %>
-       
+       <%= link_to "Login", new_user_session_path %> 
      <% end %>
+    
      </ul>
      </div>
 
-     </nav>
+  </nav>
     <%= yield %>
     
     
