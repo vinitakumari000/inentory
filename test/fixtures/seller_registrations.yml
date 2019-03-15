@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_name: MyString
+  shop_name: MyString
+  phone_no1: MyString
+  phone_no2: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  pincode: MyString
+  state: MyString
+  image: MyString
+  working_hour_from: MyString
+  working_hour_to: MyString
+  website_url: MyString
+  company_email: MyString
+  introduction: MyString
+  gst_no: MyText
+  gst_image: MyString
+  owner_pan_no: MyText
+  pan_image: MyString
+  shop_pan_no: MyText
+  shop_pan_image: MyString
+  owner_aadhar_no: MyText
+  aadhar_image: MyString
+  trade_liscense_no: MyText
+  trade_liscence_image: MyString
+  municipality_crop_certificate_no: MyText
+  municipality_crop_certificate_image: MyString
+  iso_no: MyText
+  iso_image: MyString
+
+two:
+  owner_name: MyString
+  shop_name: MyString
+  phone_no1: MyString
+  phone_no2: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  pincode: MyString
+  state: MyString
+  image: MyString
+  working_hour_from: MyString
+  working_hour_to: MyString
+  website_url: MyString
+  company_email: MyString
+  introduction: MyString
+  gst_no: MyText
+  gst_image: MyString
+  owner_pan_no: MyText
+  pan_image: MyString
+  shop_pan_no: MyText
+  shop_pan_image: MyString
+  owner_aadhar_no: MyText
+  aadhar_image: MyString
+  trade_liscense_no: MyText
+  trade_liscence_image: MyString
+  municipality_crop_certificate_no: MyText
+  municipality_crop_certificate_image: MyString
+  iso_no: MyText
+  iso_image: MyString

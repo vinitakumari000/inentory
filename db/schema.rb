@@ -10,10 +10,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_104403) do
+ActiveRecord::Schema.define(version: 2019_03_12_093707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "seller_registrations", force: :cascade do |t|
+    t.string "owner_name"
+    t.string "shop_name"
+    t.string "phone_no1"
+    t.string "phone_no2"
+    t.string "address1"
+    t.string "address2"
+    t.string "city"
+    t.string "pincode"
+    t.string "state"
+    t.string "image"
+    t.string "working_hour_from"
+    t.string "working_hour_to"
+    t.string "website_url"
+    t.string "company_email"
+    t.string "introduction"
+    t.text "gst_no"
+    t.string "gst_image"
+    t.text "owner_pan_no"
+    t.string "pan_image"
+    t.text "shop_pan_no"
+    t.string "shop_pan_image"
+    t.text "owner_aadhar_no"
+    t.string "aadhar_image"
+    t.text "trade_liscense_no"
+    t.string "trade_liscence_image"
+    t.text "municipality_crop_certificate_no"
+    t.string "municipality_crop_certificate_image"
+    t.text "iso_no"
+    t.string "iso_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "designation"
+    t.string "shop_phone_no"
+    t.string "landmark"
+    t.string "name_of_the_buissness"
+    t.string "certificate_of_incorporation"
+    t.string "trade_mark_registration"
+    t.string "rental_agreement"
+    t.string "tin_no"
+    t.string "tan_no"
+    t.string "address_proof"
+    t.string "account_holder_name"
+    t.string "account_number"
+    t.string "confirm_account_no"
+    t.string "ifsc_code"
+    t.string "bank_name"
+    t.string "bank_branch"
+    t.string "account_type"
+    t.string "upload_cancelled_cheque"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -21,6 +73,10 @@ ActiveRecord::Schema.define(version: 2019_03_08_104403) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"

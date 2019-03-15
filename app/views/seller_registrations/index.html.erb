@@ -1,0 +1,253 @@
+  <script type="text/javascript" src="../javascript/jquery.min.js"></script> 
+  <script type="text/javascript" src="../javascript/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../javascript/jquery.timepicker.min.js"></script>
+
+  <link rel="stylesheet" src="../stylesheet/jquery.timepicker.min.css">
+  <link rel="stylesheet" src="../stylesheet/jquery-ui.min.css">
+  
+  
+
+  <h1>SELLER REGISTRATION FORM</h1>
+  <form>
+  
+       
+  Owner Name:<br>
+  <input type="text" name="ownername" id="name" style="width: 200px;"></br><br>
+  Shop Name:<br>
+  <input type="text" name="shopname" id="shop" style="width: 400px;"></br><br>
+  Designation:<br>
+  <input type="text" name="designation" id="desg" style="width: 400px;"></br><br>
+  Phone No.:<br>
+  <input type="text" name="phoneno" id="phone1"></br><br>
+  Alternative Phone No.:<br>
+  <input type="text" name="phoneno" id="phone2"></br><br>
+  Address:<br>
+   <input type="text" name="address" id="address1" style="width: 400px;"></br><br>
+  Alternative Address:<br>
+  <input type="text" name="address" id="address2" style="width: 400px;"></br><br>
+  City:<br>
+  <input type="text" name="city" id="city" style="width: 100px;"></br><br>
+  Pincode:<br>
+  <input type="text" name="pincode" id="pincode" style="width: 200px;"></br><br>
+  State:<br>
+  <input type="text" name="state" id="state" style="width: 100px;"></br><br>
+  
+  Working Hour_From:<br>
+  <input type="text" name="hour_from" id="hour_from" style="width: 75px;"></br><br>
+  Working Hour_To:<br>
+  <input type="text" name="hour_to" id="hour_to" style="width: 75px;"></br><br>
+  Website Url:<br>
+  <input type="text" name="url" id="url" style="width: 250px;"></br><br>
+  Company Email:<br>
+  <input type="email" name="email" id="email" style="width: 250px;"></br><br>
+  Introduction:<br>
+  <style> 
+textarea {
+  width: 50%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 10px;
+  resize: none;
+}
+</style>
+  <textarea id ="text">>Some text...</textarea>
+<br>
+ 
+  Gst No.:<br>
+  <input type="text" name="num" id="num"></br><br>
+ 
+  Owner PAN no.:<br>
+  <input type="text" name="pan" id="pan"></br><br>
+  
+  SHOP PAN NO.<br>
+  <input type="text" name="pan1" id="pan1"></br><br>
+ 
+  OWNER AADHAR NO.:<br>
+  <input type="text" name="aadhar" id="aadhar"></br><br>
+ 
+  TRADE LISCENSE NO.:<br>
+  <input type="text" name="liscense1" id="liscense1"></br><br>
+  
+  ISO NO.:<br>
+  <input type="text" name="iso1" id="iso2"></br><br>
+
+  SHOP PHONE NO.:<br>
+  <input type="text" name="shopephone" id="sphone"></br><br>
+  LANDMARK:<br>
+  <input type="text" name="landmark" id="land"></br><br>
+  NAME OF THE BUISSNESS:<br>
+  <select id="buissness_name">
+  <option value="">Select the name of buissness</option>
+  <option value="pvt">Pvt</option>
+  <option value="partnership">Partnership</option>
+  <option value="llp">Llp</option>
+  <option value="proprietorship">Proprietorship</option>
+  </select></br><br> 
+  CERTIFICATE OF INCORPORATION:<br>
+  <input type="text" name="certificate" id="certificate"></br><br>
+  TRADE MARK REGISTRATION:<br>
+  <input type="text" name="registration" id="registration"></br><br>
+  ADDRESS PROOF:<br>
+  <select id="address_proof">
+  <option value="">select the address proof</option>  
+  <option value="rental agrrement">Rental Agreement</option>
+  <option value="electricity bill">Electricity Bill</option>
+  <option value="telephone bill">Telephone Bill</option>
+  </select></br><br>
+
+  
+  
+  <button type="submit" onclick="seller_registration()">Submit</button>
+</form>
+<script>
+  $(function() {
+            $( "#hour_from" ).timepicker();
+            $( "#hour_to" ).timepicker();
+         });
+
+  function seller_registration(){
+    var owner_name = document.getElementById("name").value.trim();
+    var shop_name = document.getElementById("shop").value.trim();
+    var designation = document.getElementById("desg").value.trim();
+    var phone_no = document.getElementById("phone1").value.trim();
+    var alternative_phone_no = document.getElementById("phone2").value.trim();
+    var address = document.getElementById("address1").value.trim();
+    var alternative_address = document.getElementById("address2").value.trim();
+    var city = document.getElementById("city").value.trim();
+    var pincode = document.getElementById("pincode").value.trim();
+    var state = document.getElementById("state").value.trim();
+    //var image = document.getElementById("image1").value;
+    var working_hour_from = document.getElementById("hour_from").value;
+    var working_hour_to = document.getElementById("hour_to").value;
+    var website_url = document.getElementById("url").value.trim();
+    var company_email = document.getElementById("email").value.trim();
+    var introduction = document.getElementById("text").value.trim();
+    var gst_no = document.getElementById("num").value.trim();
+    //var gst_image = document.getElementById("image2").value;
+    var owner_pan_no = document.getElementById("pan").value.trim();
+    //var owner_pan_image = document.getElementById("fileupload1").value;
+    var shop_pan_no = document.getElementById("pan1").value.trim();
+    //var shop_pan_image = document.getElementById("fileupload2").value;
+    var owner_aadhar_no = document.getElementById("aadhar").value.trim();
+    //var owner_aadhar_image = document.getElementById("fileupload3").value;
+    var trade_liscense_no = document.getElementById("liscense1").value.trim();
+   // var trade_liscense_image = document.getElementById("fileupload4").value;
+    var iso_no = document.getElementById("iso2").value.trim();
+   // var iso_image = document.getElementById("fileupload6").value;
+    var shop_phone_no = document.getElementById("sphone").value.trim();
+    var landmark = document.getElementById("land").value.trim();
+    var name_of_the_buissness = document.getElementById("buissness_name").value;
+    //var certificate_of_incorporation = document.getElementById("certificate").value;
+    //var trade_mark_registration = document.getElementById("registration").value;
+    var address_proof = document.getElementById("address_proof").value;
+    var data_hash = {}
+     
+    data_hash["owner name"] = owner_name
+    data_hash["shop name"] = shop_name
+    data_hash["designation"] = designation
+    data_hash["phone no"] = phone_no
+    data_hash["alternative phone no"] = alternative_phone_no
+    data_hash["address"] = address
+    data_hash["alternative address"] = alternative_address
+    data_hash["city"] = city
+    data_hash["pincode"] = pincode
+    data_hash["state"] = state
+    //data_hash["image"] = image
+    data_hash["working hour from"] = working_hour_from
+    data_hash["working hour to"] = working_hour_to
+    data_hash["website url"] = website_url
+    data_hash["company email"] = company_email
+    data_hash["introduction"] = introduction
+    data_hash["gst no"] = gst_no
+   // data_hash["gst imsge"] = gst_image
+    data_hash["owner pan no"] = owner_pan_no
+    //data_hash["owner_pan_image"] = owner_pan_image
+    data_hash["shop pan no"] = shop_pan_no
+    //data_hash["shop pan image"] = shop_pan_image
+    data_hash["owner aadhar no"] = owner_aadhar_no
+    //data_hash["owner_aadhar_image"] = owner_aadhar_image
+    data_hash["trade liscense no"] = trade_liscense_no
+   // data_hash["trade liscense image"] = trade_liscense_image
+    data_hash["iso no"] = iso_no
+   // data_hash["iso image"] = iso_image
+     data_hash["shop phone no"] = shop_phone_no
+     data_hash["landmark"] = landmark
+     data_hash["name of the buissness"] = name_of_the_buissness
+     //data_hash["certificate of incorporation"] = certificate_of_incorporation
+     //data_hash["trade mark registration"] = trade_mark_registration
+     data_hash["address proof"] = address_proof
+
+
+    
+    if(field_validation() == true && phone_no_validation ()== true && email_validation() == true){
+
+    $.ajax({
+          type:'post',
+          url: '/save_seller_data',
+          data:JSON.stringify(data_hash),
+          success: function (msg) {
+              alert(msg);
+          },
+      });
+
+    }
+
+
+  }
+  function field_validation(){
+    var flag = true;
+    var owner_name = document.getElementById("name").value.trim();
+    var shop_name = document.getElementById("shop").value.trim();
+    var designation = document.getElementById("desg").value.trim();
+
+    var address = document.getElementById("address1").value.trim();
+    var city = document.getElementById("city").value.trim();
+    var pincode = document.getElementById("pincode").value.trim();
+    var state = document.getElementById("state").value.trim();
+    
+    var working_hour_from = document.getElementById("hour_from").value;
+    var working_hour_to = document.getElementById("hour_to").value;
+    var gst_no = document.getElementById("num").value.trim();
+    var owner_pan_no = document.getElementById("pan").value.trim();
+    var shop_pan_no = document.getElementById("pan1").value.trim();
+    var owner_aadhar_no = document.getElementById("aadhar").value.trim();
+    var trade_liscense_no = document.getElementById("liscense1").value.trim();
+    var iso_no = document.getElementById("iso2").value.trim();
+    var name_of_the_buissness = document.getElementById("buissness_name").value;
+    var address_proof = document.getElementById("address_proof").value;
+
+     if( owner_name == "" && shop_name == "" && designation == "" && address == "" && 
+      city == "" && pincode == "" && state == "" && working_hour_from == "" && working_hour_to == ""
+      && gst_no == "" && owner_pan_no == "" && shop_pan_no == "" && owner_aadhar_no == "" &&
+      trade_liscense_no == "" && iso_no == "" && name_of_the_buissness == "" && address_proof == ""){
+        alert("Please filled all the mandatory fields before submitting the form");
+        return flag = false;
+    }
+  }
+    function phone_no_validation(){
+      var flag = true;
+      var phone_no = document.getElementById("phone1").value.trim();
+      var shop_phone_no = document.getElementById("sphone").value.trim();
+      var regExp = /^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}/;
+     
+  if (!phone_no.match(regExp) && !shop_phone_no.match(regExp)) {
+    alert("Please enter a valid phone number");
+    return flag = false;
+    }
+
+  }
+  function email_validation(){
+    var flag = true;
+    var company_email = document.getElementById("email").value.trim();
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     if(!re.test(String(company_email).toLowerCase())){
+       alert("Please enter a valid email")
+       return flag = false;
+     }
+
+  }
+</script>
